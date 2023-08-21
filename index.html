@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Codemazaa</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body> 
+
+   <div class="main">
+        <div class = "navbar"></div>
+           <p styl="background-image: url('bgcolor.jpg');">
+        </styl>
+           </p>
+
+ 
+        <div class="content">
+            <p align= "top">
+            <h1>New To  <br><span> Coding World  ! </span><br></h1>
+            <p class="par"></p>
+
+
+<!--           
+<style>
+.button{
+  align: 10%;
+padding: 20px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  background-color: grey;
+  border: none;
+  border-radius: 100%;
+  box-shadow: 0 8px #999;
+}
+.blink {
+            animation: blinker 200s linear infinite;
+            color: black;
+            font-family: sans-serif;
+        }
+        @keyframes blinker {
+            40% {
+                opacity: 0;
+            }
+.button:hover {background-color: red}
+
+.button:active {
+  background-color: black;
+  box-shadow: 10 500px #666;
+  transform: translateY(10px);
+}
+</style>
+<p class = "blink">
+<button class="button" >CODEMAZAA</button>
+</p> -->
+
+                <h1 id="msg"></h1>     
+                <div class="form">
+                <form>
+
+
+                    <h2>We Appreciate your interest</h2> 
+
+  <input type="text" name="name" autocomplete="off" placeholder='Name'>
+               
+  <input type="email" id="email" name="email"  autocomplete="off" pattern="[a-zA-Z0-9._%+-]+@gmail\.com$" placeholder="Email" required  />
+                    <input type="tel" name="phone" autocomplete="off" pattern="[0-9]{10}"  placeholder="Phone">
+               
+                    <button class="btnn" id="sub"><a href = "file:///E:/Codemazaa%20project/f.html">Submit </a></button>
+                  
+<style>
+.btnn{
+padding: 10px 8px;
+  font-size: 20px;
+  text-align: top;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color: grey;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 8px #999;
+}
+
+.btnn:hover {background-color: #c0c0c0;
+color: black}
+
+}
+}
+      </style>           </form>
+<script>
+
+        let form = document.querySelector("form");
+        // The document.querySelector() method returns the first element that matches a specified CSS selector.
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+     
+            // The preventDefault() method stops the form from submitting and prevents the page from refreshing.
+            document.querySelector("#sub").value = "Submiting..";
+            // Change the value of the submit button to "Submitting..." while the form is being submitted.
+            let data = new FormData(form);
+            // The FormData() method creates a new FormData object that contains the values of all the form fields.
+            fetch('https://script.google.com/macros/s/AKfycbxxMWYV1Yo6oJUw-uLOfutH_JzBcAvVH0cMp7eZXWx9sJkP-58he9SCWoInqdRkbfOkjQ/exec',{
+                    method: "POST",
+                    body: data
+                })
+          
+                .then(res => res.text())
+               
+                .then(data => {
+                    document.querySelector("#msg").innerHTML = data;
+                    
+                    document.querySelector("#sub").value = "Submit"
+                   
+                });
+        })
+    </script>
+               
+
+                </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+  
+</p>
+</body>
+</html>
+
